@@ -1,13 +1,13 @@
 # Project1
-#Introduction
+# Introduction
 MapReduce is a programming model based on the idea of dividing a large computational problem into smaller sub-problems that can be processed separately in parallel. The framework consists of two main components: a map phase and a reduce phase. The input data is first split into a set of key-value pairs in the mapper, then passes these pairs to the reducer phase, aggregating them to produce a set of output values. In some complicated cases, it also allows running multiple rounds of MapReduce to get the desired results. It allows multiple machines to handle the tasks in a cluster, making it possible to analyze large datasets efficiently. This project aims to solve two data analysis problems using Hadoop MapReduce-based program. For the first part, we concentrated on the New York City (NYC) Parking Violations data to identify the most common time and location tickets issued, the most usual years and types of cars being ticketed, and the color of cars that get parking tickets the most frequently. To do this, we developed our own Python implementation of the MapReduce framework to analyze the data. Our implementation followed one or multiple rounds of the MapReduce approach. 
 
-#Dataset Description
+# Dataset Description
 This data set must place at dir: "/mapreduce-test/mapreduce-test-python/proj1/q1", and the file name of this csv file must be "data.csv"!}
 
 The dataset on NYC Parking Violations is collected by the NYC Department of Finance every year. It is hosted and publicly accessible on the platform known as NYC Open Data, which attempts to give open access to a variety of datasets and data resources published and managed by New York City government organizations. The NYC Parking Violation dataset contains the information on each ticket violation record in New York City. The dataset contains a total of 11535314 rows representing each ticket and 43 columns with more detailed information, such as the date, location the violation occurred, and much more, including the information of vehicles, such as the type and the color of vehicles. 
 
-#MapReduce
+# MapReduce
 In the first part, we were expected to set up the Hadoop Mapreduce-based framework along with the scheduler for resource management to analyze the violation tickets situation in New York City. We used the NYC Parking Violations 2023 dataset. We analyzed the ticket violations situation during the period of 6/10/2022 to 2/23/2023. Specifically, we were going to answer the following four questions: 
 When are tickets most likely to be issued?
 For this question, we developed a single round of MapReduce.  The purpose of our MapReduce script was to extract the time values from the input dataset, round them down to the nearest hour, and output the resulting hours along with a count of 1 for each hour. This output could then be used as input to a MapReduce job to produce a count of events per hour. 
