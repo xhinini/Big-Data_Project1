@@ -13,7 +13,7 @@ In the first part, we were expected to set up the Hadoop Mapreduce-based framewo
 When are tickets most likely to be issued?
 
 For this question, we developed a single round of MapReduce.  The purpose of our MapReduce script was to extract the time values from the input dataset, round them down to the nearest hour, and output the resulting hours along with a count of 1 for each hour. This output could then be used as input to a MapReduce job to produce a count of events per hour. 
-From our result, the most often time tickets get issued was 9:00 AM with 999544 counts. 
+From our result, the most often time of tickets get issued was 9:00 AM with 999544 counts. 
 
 What are the most common years and types of cars to be ticketed?
 
@@ -25,4 +25,4 @@ For this question, we developed two rounds of MapReduce. From first MapReduce pr
 
 Which color of the vehicle is most likely to get a ticket?
 
-For this question, we deveoped three rounds of Mapreduce. We used the first round of MapReduce that generated the key-value pairs of color and counts, and then got the aggregated counts for each color at the reducer phase, and followed by the second round of MapReduce to make the counts could be sorted by producing new key-value pairs. After this, we used another round of MapReduce to group the same color meaning together of the top 20 colors with most frequency. As a result, we found that WHITE vehicles, with 2781715 times, were the most likely to be ticketed. 
+For this question, we deveoped three rounds of Mapreduce. We used the first round of MapReduce that generated the key-value pairs of color and counts, and then got the aggregated counts for each color at the reducer phase, and followed by the second round of MapReduce to make the counts could be sorted by producing new key-value pairs. After this, we used another round of MapReduce to group the same color together. As a result, we found that WHITE vehicles, with 2781715 times, were the most likely to be ticketed. 
