@@ -15,5 +15,7 @@ The MapReduce function are placed at proj1/Bonus/q1, so cd to it first and make 
 For the second question, we developed two rounds of MapReduce to segment the parking areas into different zones based on their proximity to Lincoln Center and recommend the zone with the most parking spots within the 0.5-mile walking distance. In the frist round of MapReduce, we computed the mean of all data points in the cluster, which was the total sum of all points divided by the total number of points. In the second round of MapReduce, we found the zone with particular datapoints lied so that we knew the zone to which the data point was closest. Then we collected the set of data points that were closest to this zone and whether there was a ticket violation at this point. Now we got the number of parking tickets for each zone from every mapper, and then we printed out the zone with the minimum number of parking tickets as the favourable parking zone, which was zone 2.
 
 #### Usage: 
+Install the prerequisite package first with: pip install numpy   
+
 The MapReduce function are placed at proj1/Bonus/q2, so cd to it first and make sure you have the data at the right place!   
 
