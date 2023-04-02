@@ -1,5 +1,5 @@
 # Bonus Question
-***This Directory needs to be placed at "/mapreduce-test/mapreduce-test-python/", failing placing it at the right place could cause the program to crash.***
+***This Directory needs to be placed at "/mapreduce-test/mapreduce-test-python/", failing placing it at the right place could cause the program to crash.***    
 K-Means is an unsupervised machine learning algorithm that is commonly used for clustering and segmentation analysis. The algorithm is based on the idea of grouping similar data points into a fixed number of clusters. However, K-Means' biggest challenge is determining the optimal number of classes. This will significantly affect the prediction accuracy of the model. In the Bonus Question, we aimed to develop a MapReduce-based program based on the K-Means algorithm, first to predict the probability of getting a ticket if a black car parking illegally at street codes 34510, 10030, 34050, second to define the parking place that if walking within 0.5 miles to get Lincoln Center. We still worked on the NYC Parking Violations dataset to answer the bonus question.
 # DataSet Description:    
 Same as Question 1.  
